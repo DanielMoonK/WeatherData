@@ -34,6 +34,7 @@ public class WeatherData{
                         longestLength = newLength;
                         newLength = 0;
                     }
+                    else if(temperatures.get(i+1) <= threshold && longestLength >= newLength) newLength = 0;
                 }
                 else{
                     if(longestLength < newLength) longestLength = newLength;
